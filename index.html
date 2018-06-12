@@ -31,7 +31,7 @@
       </div>
     </div>
   </nav>
-  <div id="imgSlider" class="carousel slide" data-ride="carousel">
+  <div id="imgSlider" class="carousel slide carousel-container" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#imgSlider" data-slide-to="0" class="active"></li>
         <li data-target="#imgSlider" data-slide-to="1"></li>
@@ -61,71 +61,29 @@
       </a>
   </div>
   <div id="listen" class="bg-1">
-    <div class="container">
-      <div class="row">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6 center-block" id="video">  
-            <h3 class="text-center">New song out now!</h3>          
-            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/YmL5PcYrJtA?rel=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-sm-3"></div>
+    <div class="content-main">
+      <div class="content-wrapper">
+          <h3 class="content-title">New song out now!</h3>
+          <div class="media-video-container">
+            <iframe class="embed-responsive-item media-video" width="560" height="315" src="https://www.youtube.com/embed/YmL5PcYrJtA?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>                    
       </div>
-      <div class="row text-center" id="newSong">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6 center-block">
-          <h3 class="text-center">..also on Spotify!</h3>
-          <iframe src="https://open.spotify.com/embed?uri=spotify:track:33ivNAyk5LCFP4NjxpBAQD" width="380" height="80" frameborder="0" allowtransparency="true"></iframe>
-        </div>
-        <div class="col-sm-3"></div>
+      <div class="content-wrapper" id="newSong">
+        <h3 class="content-title">..also on Spotify!</h3>
+        <iframe class="media" src="https://open.spotify.com/embed?uri=spotify:track:33ivNAyk5LCFP4NjxpBAQD" width="380" height="80" frameborder="0" allowtransparency="true"></iframe>
       </div>
-      <div class="row text-center">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6 center-block">
-          <h3 class="text-center">Listen more!</h3>
-          <iframe src="https://embed.spotify.com/?uri=spotify:artist:6wgE1KeoGvBwsTrQhIDn9h" width="380" height="400" frameborder="0" allowtransparency="true"></iframe>
-        </div>
-        <div class="col-sm-3"></div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-          </div>
-          <div class="modal-body">
-            <form role="form">
-              <div class="form-group">
-                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-                <input type="number" class="form-control" id="psw" placeholder="How many?">
-              </div>
-              <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-              </div>
-                <button type="submit" class="btn btn-block">Pay
-                  <span class="glyphicon glyphicon-ok"></span>
-                </button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-              <span class="glyphicon glyphicon-remove"></span> Cancel
-            </button>
-            <p>Need <a href="#">help?</a></p>
-          </div>
-        </div>
+      <div class="content-wrapper">
+        <h3 class="content-title">Listen more!</h3>
+        <iframe class="media" src="https://embed.spotify.com/?uri=spotify:artist:6wgE1KeoGvBwsTrQhIDn9h" width="380" height="400" frameborder="0" allowtransparency="true"></iframe>
       </div>
     </div>
   </div>
-  <div id="contact" class="container">
+  <div id="contact">
     <h3 class="text-center">Follow me on</h3>
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-3 text-center"><a href="https://open.spotify.com/artist/6wgE1KeoGvBwsTrQhIDn9h"><img src="img/Spotify_Icon_RGB_Green.png" width="144" height="144" /></a></div>
-      <div class="col-md-3 text-center"><a href="https://www.instagram.com/younghuztla/"><img src="img/IG_Glyph_Fill.png" width="144" height="144" /></a></div>
-      <div class="col-md-3"></div>
+    <div class="content-wrapper">
+      <div class="social-icons-container">
+        <a href="https://open.spotify.com/artist/6wgE1KeoGvBwsTrQhIDn9h"><img class="social-icon" src="img/Spotify_Icon_RGB_Green.png" /></a>
+        <a href="https://www.instagram.com/younghuztla/"><img class="social-icon" src="img/IG_Glyph_Fill.png" /></a>
       </div>
     </div>
     <br>
